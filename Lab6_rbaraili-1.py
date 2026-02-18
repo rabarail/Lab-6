@@ -12,3 +12,6 @@ users = {
     "user1": "password2"
 }
 
+username = input("Enter username: ")
+if username not in users:
+    print("Username not found. Exiting.")
