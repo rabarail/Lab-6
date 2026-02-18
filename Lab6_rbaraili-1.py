@@ -17,8 +17,21 @@ if username not in users:
     print("Username not found. Exiting.")
 
 else:
+    
+    attempts = 0
+    while attempts < 3:
+        password = input("Enter password: ")
+        if password == users[username]:
+            if username == "guest":
+                print("Welcome, guest! You have Guest access.")
+            else:
+                print("Welcome, " + username + ". You have Security Level 1.")
+            break
 
-    password = input("Enter password: ")
-    if password == users[username]:
-        if username == "guest":
-            print("Welcome, guest! You have Guest acess.")
+           
+
+
+
+
+
+
