@@ -23,17 +23,18 @@ else:
         password = input("Enter password: ")
         if password == users[username]:
             if username == "guest":
-                print("Welcome, guest! You have Guest access.")
+                print("Welcome, guest. You have Guest access.")
             else:
                 print("Welcome, " + username + ". You have Security Level 1.")
             break
+
         else:
             attempts += 1
             if attempts < 3:
                 print("Incorrect password. Please try again.")
             else:
                 print("Access Denied.")
-                
+
 
            
 
