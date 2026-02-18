@@ -15,3 +15,10 @@ users = {
 username = input("Enter username: ")
 if username not in users:
     print("Username not found. Exiting.")
+
+else:
+
+    password = input("Enter password: ")
+    if password == users[username]:
+        if username == "guest":
+            print("Welcome, guest! You have Guest acess.")
